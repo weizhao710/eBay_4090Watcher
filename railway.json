@@ -3,6 +3,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "sleep infinity"
+    "startCommand": "python3 watcher.py"
   }
 }
