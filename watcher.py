@@ -256,6 +256,6 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"主循环出错：{e}")
 
-        sleep_time = 20 + random.randint(0, 5)
+        sleep_time = 60 + random.randint(0, 5)
         print(f"本轮抓取结束，休息 {sleep_time} 秒...\n")
         time.sleep(sleep_time)
