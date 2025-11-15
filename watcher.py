@@ -10,7 +10,7 @@ import telebot
 # ========== 环境变量 ==========
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
-EBAY_URL = os.getenv("EBAY_URL")
+EBAY_URL = (os.getenv("EBAY_URL") or "").strip()
 
 if not TELEGRAM_TOKEN or not CHAT_ID or not EBAY_URL:
     raise RuntimeError(
